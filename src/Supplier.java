@@ -8,12 +8,12 @@
  *
  * @author snwijesuriya
  */
-public class Driver extends javax.swing.JFrame {
+public class Supplier extends javax.swing.JFrame {
 
     /**
-     * Creates new form jDriver
+     * Creates new form Supplier
      */
-    public Driver() {
+    public Supplier() {
         initComponents();
     }
 
@@ -27,7 +27,6 @@ public class Driver extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -36,126 +35,121 @@ public class Driver extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jTextField11 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(657, 400));
-        setMinimumSize(new java.awt.Dimension(657, 400));
-        setResizable(false);
+        setPreferredSize(new java.awt.Dimension(642, 412));
 
+        jPanel1.setMaximumSize(new java.awt.Dimension(642, 412));
+        jPanel1.setMinimumSize(new java.awt.Dimension(642, 412));
         jPanel1.setLayout(null);
 
-        jPanel2.setMaximumSize(new java.awt.Dimension(660, 373));
-        jPanel2.setMinimumSize(new java.awt.Dimension(660, 373));
-        jPanel2.setLayout(null);
+        jLabel1.setText("Supplier ID");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(40, 40, 52, 14);
 
-        jLabel1.setText("Driver Name");
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(77, 107, 59, 14);
+        jLabel2.setText(" Title");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(40, 70, 23, 14);
 
-        jLabel2.setText("Driver ID");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(77, 84, 43, 14);
+        jLabel3.setText("Name");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(40, 100, 27, 14);
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(30, 99, 0, 0);
 
-        jLabel3.setText("Driver");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(271, 18, 29, 14);
-
-        jLabel4.setText("Driver Nic");
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(77, 133, 46, 14);
-
-        jLabel5.setText("Address");
-        jPanel2.add(jLabel5);
-        jLabel5.setBounds(77, 159, 39, 22);
+        jLabel5.setText("NIC");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(40, 130, 18, 14);
 
         jLabel6.setText("Gender");
-        jPanel2.add(jLabel6);
-        jLabel6.setBounds(77, 195, 35, 14);
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(40, 190, 40, 14);
 
         jLabel7.setText("Telephone Number");
-        jPanel2.add(jLabel7);
-        jLabel7.setBounds(77, 230, 90, 14);
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(40, 220, 90, 14);
 
-        jLabel8.setText("Mobile Number");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(77, 268, 70, 14);
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(177, 81, 284, 20);
-        jPanel2.add(jTextField2);
-        jTextField2.setBounds(177, 192, 284, 20);
-        jPanel2.add(jTextField3);
-        jTextField3.setBounds(177, 133, 284, 20);
-        jPanel2.add(jTextField4);
-        jTextField4.setBounds(177, 227, 284, 20);
-        jPanel2.add(jTextField5);
-        jTextField5.setBounds(177, 107, 284, 20);
-        jPanel2.add(jTextField6);
-        jTextField6.setBounds(177, 160, 284, 20);
-        jPanel2.add(jTextField7);
-        jTextField7.setBounds(177, 50, 284, 20);
-        jPanel2.add(jTextField8);
-        jTextField8.setBounds(177, 265, 284, 20);
+        jLabel8.setText("Maobile Number");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(40, 250, 80, 14);
 
-        jLabel9.setText("Driver Join Date");
-        jPanel2.add(jLabel9);
-        jLabel9.setBounds(77, 299, 77, 14);
+        jLabel9.setText("Email");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(40, 280, 24, 14);
 
-        jLabel10.setText("Driver Status");
-        jPanel2.add(jLabel10);
-        jLabel10.setBounds(77, 53, 63, 14);
+        jLabel10.setText("Join Date");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(40, 310, 45, 14);
+        jPanel1.add(jTextField1);
+        jTextField1.setBounds(170, 70, 226, 20);
+        jPanel1.add(jTextField2);
+        jTextField2.setBounds(170, 40, 226, 20);
+        jPanel1.add(jTextField4);
+        jTextField4.setBounds(170, 100, 226, 20);
+        jPanel1.add(jTextField5);
+        jTextField5.setBounds(170, 130, 226, 20);
+        jPanel1.add(jTextField6);
+        jTextField6.setBounds(170, 160, 226, 20);
+        jPanel1.add(jTextField7);
+        jTextField7.setBounds(170, 190, 226, 20);
+        jPanel1.add(jTextField8);
+        jTextField8.setBounds(170, 250, 226, 20);
+        jPanel1.add(jTextField9);
+        jTextField9.setBounds(170, 220, 226, 20);
 
-        jButton1.setText("Submit");
-        jPanel2.add(jButton1);
-        jButton1.setBounds(177, 349, 65, 23);
+        jLabel11.setText("Address");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(40, 160, 39, 14);
 
-        jButton2.setText("Clear");
-        jPanel2.add(jButton2);
-        jButton2.setBounds(272, 349, 71, 23);
+        jButton1.setText("Close");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(340, 340, 73, 23);
 
-        jButton3.setText("Close");
-        jPanel2.add(jButton3);
-        jButton3.setBounds(370, 349, 69, 23);
-        jPanel2.add(jDateChooser1);
-        jDateChooser1.setBounds(180, 300, 290, 20);
+        jButton2.setText("Submit");
+        jPanel1.add(jButton2);
+        jButton2.setBounds(140, 340, 73, 23);
 
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(-3, 0, 660, 400);
+        jButton3.setText("Clear");
+        jPanel1.add(jButton3);
+        jButton3.setBounds(240, 340, 73, 23);
+
+        jLabel12.setText("Supplier");
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(250, 10, 38, 14);
+        jPanel1.add(jDateChooser1);
+        jDateChooser1.setBounds(170, 310, 250, 20);
+        jPanel1.add(jTextField11);
+        jTextField11.setBounds(170, 280, 226, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 657, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 657, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
+
+        jPanel1.getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -177,21 +171,20 @@ public class Driver extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Driver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Supplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Driver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Supplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Driver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Supplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Driver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Supplier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Driver().setVisible(true);
+                new Supplier().setVisible(true);
             }
         });
     }
@@ -203,6 +196,8 @@ public class Driver extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -212,14 +207,14 @@ public class Driver extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
