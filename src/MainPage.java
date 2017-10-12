@@ -18,6 +18,7 @@ public class MainPage extends javax.swing.JFrame {
      */
     public MainPage() {
         initComponents();
+       this.setLocationRelativeTo(null);
     }
 
     /**
@@ -35,14 +36,18 @@ public class MainPage extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 0));
         setMaximumSize(new java.awt.Dimension(642, 412));
         setMinimumSize(new java.awt.Dimension(642, 412));
         setPreferredSize(new java.awt.Dimension(642, 412));
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 153));
         jPanel1.setMaximumSize(new java.awt.Dimension(642, 412));
         jPanel1.setMinimumSize(new java.awt.Dimension(642, 412));
         jPanel1.setPreferredSize(new java.awt.Dimension(642, 412));
+        jPanel1.setLayout(null);
 
         jLabel2.setText("ADD CUS");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -50,6 +55,8 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel2MouseClicked(evt);
             }
         });
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(190, 360, 44, 14);
 
         jLabel3.setText("ADD SUP");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -57,35 +64,15 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(110, 370, 78, 14);
 
         jLabel4.setText("jLabel4");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jLabel2)
-                .addGap(81, 81, 81)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
-                .addComponent(jLabel4)
-                .addContainerGap(256, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(244, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
-                .addGap(142, 142, 142))
-        );
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(310, 360, 34, 14);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 642, 400);
+        jPanel1.setBounds(0, 0, 880, 590);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
